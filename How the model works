@@ -1,0 +1,7 @@
+Step 1:State coloumn is categorical data so we have to create dummy variable for all three states and that to in encoding from.
+This is done using sklearn package's library LabelEncoder and OneHotEncoder(for seprating dummy variable labelling them 0,1)
+
+Step 2: dataset is divided in two set, one for training set and other for test set in 40:10 ratio. This is done using sklearn 
+package's train_test_split.
+
+Step 3: Creating a regressor that will used to predict future valuse
