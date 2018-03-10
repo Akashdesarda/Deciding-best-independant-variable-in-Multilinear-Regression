@@ -4,4 +4,11 @@ This is done using sklearn package's library LabelEncoder and OneHotEncoder(for 
 Step 2: dataset is divided in two set, one for training set and other for test set in 40:10 ratio. This is done using sklearn 
 package's train_test_split.
 
-Step 3: Creating a regressor that will used to predict future valuse
+Step 3: Creating a regressor that will used to predict future values. This is done by using sklearn.linear_model import LinearRegression
+X_train, y_train is uesd for traing which is later fitted in model.
+
+Step 4: this is most important step. Here optimal coloumn is generated using statsmodels.formula.api. Elimination of coloumn is based on P-value.
+I am considering significant valuse as 0.050. In each iteration coloumn having highest P-value is eliminated. (This is how the back 
+propagation algorithm works.)
+
+Conclusion: R&D is the most important factor, then is Marketing, Adminestrative, and state. 
